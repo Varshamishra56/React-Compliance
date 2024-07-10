@@ -1,0 +1,21 @@
+#skills {
+    background-color: #1a1a1a;
+    height: 650px;
+    margin-top: 0;
+    padding: 10px 50px;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  #skills h1 {
+    font-size: 40px;
+  }
+  #skills h1 span {
+    color: #e91e63;
+  }
+  #skills .services {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  

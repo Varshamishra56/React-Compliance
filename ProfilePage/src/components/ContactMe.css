@@ -1,0 +1,47 @@
+.contact-me {
+    padding:10px 50px;;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+  }
+  .contact-me h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .contact-me h1 span {
+    color: #e91e63;
+  }
+  .contact-me form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .contact-me .form-group {
+    margin-bottom: 15px;
+  }
+  .contact-me .form-group label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  .contact-me .form-group input,
+  .contact-me .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .contact-me .form-group textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  .contact-me button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  

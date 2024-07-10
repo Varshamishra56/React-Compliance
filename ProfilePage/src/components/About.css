@@ -1,0 +1,35 @@
+.specialisation {
+    height: 670px;
+    margin-top: 0;
+    text-align: center;
+    padding: 10px 50px;
+    background-color: #1a1a1a;
+  }
+  .specialisation h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+  .specialisation h1 span {
+    color: #e91e63;
+  }
+  .services {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  .service {
+    max-width: 400px;
+  }
+  .service .icon {
+    font-size: 80px;
+    margin-bottom: 20px;
+    color: #e91e63;
+  }
+  .service h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .service p {
+    font-size: 20px;
+  }
+  

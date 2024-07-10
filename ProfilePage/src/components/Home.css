@@ -1,0 +1,110 @@
+* {
+    color: white;
+    box-sizing: border-box; /* Ensure padding and border are included in width and height */
+  }
+  html {
+    background-color: #1a1a1a;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+  header {
+    background-color: black;
+    margin-top: 0px;
+    padding: 10px;
+    color: aliceblue;
+    position: fixed;
+    width: 100%;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+  }
+  .logo {
+    font-size: 2em;
+    background-color: black;
+  }
+  nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: black;
+  }
+  nav ul li {
+    margin-right: 50px;
+    justify-content: space-between;
+  }
+  nav ul li a {
+    color: rgb(253, 253, 253);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    background-color: black;
+  }
+  nav ul li a:hover {
+    color: #e91e63;
+  }
+  #Resume-Download {
+    margin-right: 30px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .my-intro {
+    height: 670px;
+    display: flex;
+    background-color: #1a1a1a;
+    width: 100%;
+  }
+  button {
+    background-color: #e91e63;
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 5px;
+  }
+  button a {
+    background-color: #e91e63;
+    color: white;
+    font-size: 23px;
+  }
+  .myhome {
+    top: 0px;
+    left: 0px;
+    padding: 10px 50px;
+    max-width: 100%;
+    background-color: #1a1a1a;
+  }
+  .myhome h1 {
+    font-size: 70px;
+    background-color: #1a1a1a;
+  }
+  .intro {
+    font-size: 30px;
+  }
+  .myhome p {
+    font-size: 20px;
+    max-width: 90%;
+    margin-top: 60px;
+  }
+  .myphoto {
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+  }
+  .myphoto img {
+    width: 377px;
+    height: 400px;
+    margin-right: 131px;
+    margin-top: 40px;
+    border-radius: 80%;
+  }
+  .icons {
+    padding: 20px;
+    justify-content: space-between;
+  }
+  .icons a {
+    font-size: 35px;
+    margin-right: 5px;
+  }
+  

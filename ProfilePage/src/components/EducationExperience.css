@@ -1,0 +1,30 @@
+.education-experience {
+    padding: 10px 50px;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+  }
+  .education-experience h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .education-experience h1 span {
+    color: #e91e63;
+  }
+  .education-experience .education-item,
+  .education-experience .experience-item {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e91e63;
+    padding-bottom: 10px;
+  }
+  .education-experience .education-item h2,
+  .education-experience .experience-item h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .education-experience .education-item p,
+  .education-experience .experience-item p {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  

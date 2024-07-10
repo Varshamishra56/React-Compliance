@@ -1,0 +1,62 @@
+.projects {
+    background-color: #1a1a1a;
+    padding: 10px 50px;
+    align-items: center;
+    height: 670px;
+  }
+  .projects h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .projects h1 span {
+    color: #e91e63;
+  }
+  .services-projects {
+    position: relative;
+    width: 60%;
+    justify-content: center;
+    overflow: hidden;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .services-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .projects-made {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  .projects-made .icon {
+    font-size: 100px;
+    text-align: center;
+  }
+  .projects-made h2 {
+    font-size: 40px;
+    text-align: center;
+    background-color: blanchedalmond;
+    color: black;
+    border-radius: 30%;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+  }
+  .projects-made p {
+    font-size: 30px;
+  }
+  .prev {
+    font-size: 40px;
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    height: 200px;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+  }
+  .next {
+    font-size: 40px;
+    position: absolute;
+    top: 200px;
+    right: 10px;
+    height: 200px;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+  }
+  
