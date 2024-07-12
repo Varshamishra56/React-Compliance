@@ -8,51 +8,51 @@ import Errormsg from "./Components/ErrorMsg";
 import "./App.css";
 import Container from "./Components/Container";
 import FoodInput from "./Components/FoodInput";
-import NewFoodItem from "./Components/NewFoodItem"
+import NewFoodItem from "./Components/NewFoodItem";
 
 function App() {
-  // let fooditems = ["Pulses", "Vegetables", "Salad", "Rice", "Milk"];
-
-  let [fooditems, setfooditems] = useState([
-    "Pulses",
-    "Vegetables",
-    "Salad",
-    "Rice",
-  ]);
-  // let fooditems=[];
-  // if(fooditems.length==0){
-  //   return <h1>I am still hungry</h1>;
-  // }
-
   const handleOnChange = (event) => {
     console.log(event.target.value);
     setTextState(event.target.value);
   };
 
-  let textStatearr = useState("Food Item is Entered By the user");
-  let textToShow = textStatearr[0];
-  let setTextState = textStatearr[1];
+  // let textStatearr = useState("Food Item is Entered By the user");
+  // let textToShow = textStatearr[0];
+  // let setTextState = textStatearr[1];
 
-  let [newitemadded,methodtoappenditem]=useState('');
+  let [textToShow, setTextState] = useState("Food Item Entered by the User");
 
-  const setnewfooditem=(event)=>{
-    if(event.key=="Enter"){
-      newitemadded=event.target.value;
-      let newitems=[...fooditems,newitemadded];
-      methodtoappenditem(newitems);
+  let [fooditems, setnewinput] = useState([
+    "Pulses",
+    "Vegetables",
+    "Salad",
+    "Rice",
+    "Milk",
+  ]);
+  const onEnter = (event) => {
+    if (event.key === "Enter") {
+      let NewFoodItem = event.target.value;
+      if (NewFoodItem.trim() !== "") {
+        let newitems = [...fooditems, NewFoodItem];
+        setnewinput(newitems);
+        console.log("new food entered is " + NewFoodItem);
+      }
+      event.target.value = ""; 
     }
-  }
+  };
 
   return (
     <>
       <Container>
         <h1>Healthy Food</h1>
-        <FoodInput handleOnChange={handleOnChange}></FoodInput>
-        <p>{fooditems}</p>
-        <p>hey there</p>
+        <FoodInput
+          handleOnChange={handleOnChange}
+          HandleKeyDown={onEnter}
+        ></FoodInput>
+        <p>{textToShow}</p>
         <Errormsg items={fooditems} key={fooditems}></Errormsg>
         <Fooditems items={fooditems} key={fooditems}></Fooditems>
-        <NewFoodItem HandleKeyDown={setnewfooditem}></NewFoodItem>
+
       </Container>
 
       <Container>
