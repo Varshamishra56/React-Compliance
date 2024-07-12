@@ -22,13 +22,7 @@ function App() {
 
   let [textToShow, setTextState] = useState("Food Item Entered by the User");
 
-  let [fooditems, setnewinput] = useState([
-    "Pulses",
-    "Vegetables",
-    "Salad",
-    "Rice",
-    "Milk",
-  ]);
+  let [fooditems, setnewinput] = useState(['Milk', 'Ghee','Vegetables']);
   const onEnter = (event) => {
     if (event.key === "Enter") {
       let NewFoodItem = event.target.value;
