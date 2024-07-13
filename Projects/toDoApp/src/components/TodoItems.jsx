@@ -1,9 +1,9 @@
 import TodoItem from "./TodoItem";
 
-function TodoItems({todoitems}) {
+function TodoItems({todoitems,onDeleteClick}) {
   return (
     <div className="items-container">
-        {todoitems.map(item=><TodoItem todoName={item.name} todoDate={item.dueDate}></TodoItem>)}
+        {todoitems.map(item=><TodoItem todoName={item.name} todoDate={item.dueDate} onDeleteClick={onDeleteClick}></TodoItem>)}
     </div>
   );
 };
