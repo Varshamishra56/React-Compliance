@@ -1,0 +1,2 @@
+npm install react-icons -save
+import {IconName} from "react-icons/fc";
