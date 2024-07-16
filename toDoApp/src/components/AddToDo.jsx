@@ -1,10 +1,14 @@
-import { useRef } from "react";
+import { useContext, useRef } from "react";
 import { useState } from "react";
 import { MdAddComment } from "react-icons/md";
+import { TodoItemsContext } from "../Store/todo-items-store";
 
-function AddTodo({ onNewItem }) {
+function AddTodo() {
   const todoNameElement=useRef();
   const dueDateElement=useRef();
+
+  const ContextObj=useContext(TodoItemsContext);
+  const addNewItem=ContextObj.addNewItem;
 
 
   const handleAddButton = (event) => {
@@ -13,7 +17,7 @@ function AddTodo({ onNewItem }) {
     const dueDate=dueDateElement.current.value;
     todoNameElement.current.value="";
     dueDateElement.current.value="";
-    onNewItem(todoName, dueDate);
+    addNewItem(todoName, dueDate);
   };
 
   return (
