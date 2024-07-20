@@ -1,0 +1,30 @@
+.appContainer {
+  display: flex;
+}
+.content {
+  width: 100%;
+}
+.sidebar {
+  height: 2300px;
+}
+.post-card {
+  margin: 20px 50px;
+}
+.create-post {
+  margin-left: 60px;
+  margin-top: 50px;
+  width: 70%;
+  border: 5px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+.welcomeMsg {
+  margin: 100px;
+}
+th {
+  text-align: -webkit-match-parent;
+}
+body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
