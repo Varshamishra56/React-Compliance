@@ -17,25 +17,30 @@ const PostList = () => {
   //   setDataFetched(true);
   // }
 
-  const [ fetching, setfetching ] = useState(false);
+  const [fetching, setfetching] = useState(false);
 
   useEffect(() => {
     setfetching(true);
-    fetch("https://dummyjson.com/posts")
+    const controller = new AbortController();
+    const signal = controller.signal;
+    fetch("https://dummyjson.com/posts", { signal })
       .then((res) => res.json())
       .then((data) => {
         addInitialPosts(data.posts);
         setfetching(false);
       });
+    return () => {
+      console.log("Cleaning up UseEffect");
+      controller.abort();
+    };
   }, []);
 
   return (
     <>
-    {fetching && <LoadingSpinner></LoadingSpinner>}
+      {fetching && <LoadingSpinner></LoadingSpinner>}
       {!fetching && postList.length === 0 && <WelcomeMsg></WelcomeMsg>}
-      {!fetching && postList.map((post) => (
-        <Post key={post.id} post={post}></Post>
-      ))}
+      {!fetching &&
+        postList.map((post) => <Post key={post.id} post={post}></Post>)}
     </>
   );
 };
