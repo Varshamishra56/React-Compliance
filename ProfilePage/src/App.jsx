@@ -9,8 +9,6 @@ import EducationExperience from './components/EducationExperience';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import ContactMe from './components/ContactMe';
-import Footer from './components/Footer';
-
 function App() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -25,7 +23,6 @@ function App() {
       <Skills />
       <Projects />
       <ContactMe />
-      <Footer />
     </div>
   );
 }

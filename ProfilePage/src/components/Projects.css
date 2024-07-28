@@ -1,62 +1,111 @@
 .projects {
-    background-color: #1a1a1a;
-    padding: 10px 50px;
-    align-items: center;
-    height: 670px;
-  }
-  .projects h1 {
-    font-size: 50px;
-    text-align: center;
-  }
-  .projects h1 span {
-    color: #e91e63;
-  }
-  .services-projects {
-    position: relative;
-    width: 60%;
-    justify-content: center;
-    overflow: hidden;
-    height: 70%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .services-inner {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  .projects-made {
-    min-width: 100%;
-    box-sizing: border-box;
-  }
-  .projects-made .icon {
-    font-size: 100px;
-    text-align: center;
-  }
-  .projects-made h2 {
-    font-size: 40px;
-    text-align: center;
-    background-color: blanchedalmond;
-    color: black;
-    border-radius: 30%;
-    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
-  }
-  .projects-made p {
-    font-size: 30px;
-  }
-  .prev {
-    font-size: 40px;
-    position: absolute;
-    top: 200px;
-    left: 10px;
-    height: 200px;
-    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
-  }
-  .next {
-    font-size: 40px;
-    position: absolute;
-    top: 200px;
-    right: 10px;
-    height: 200px;
-    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
-  }
-  
+  background-color: #1a1a1a;
+  padding: 20px 50px;
+  align-items: center;
+  height: 670px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.projects h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+.projects h1 span {
+  color: #e91e63;
+}
+.services-projects {
+  width: 80%;
+  justify-content: center;
+  overflow: hidden;
+  height: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.services-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+.projects-made {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #2e2e2e, #383838);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.projects-made:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+.projects-made .icon {
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #e91e63;
+  transition: color 0.3s;
+}
+.projects-made:hover .icon {
+  color: #ff4081;
+}
+.projects-made h2 {
+  font-size: 40px;
+  text-align: center;
+  background-color: blanchedalmond;
+  color: black;
+  border-radius: 30%;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
+    rgba(255, 255, 255, 0.12) 0px -12px 30px,
+    rgba(255, 255, 255, 0.12) 0px 4px 6px,
+    rgba(255, 255, 255, 0.17) 0px 12px 13px,
+    rgba(255, 255, 255, 0.09) 0px -3px 5px;
+  margin-bottom: 10px;
+}
+.projects-made p {
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.5;
+}
+.prev, .next {
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 0.3s, transform 0.3s, color 0.3s;
+  border-radius: 50%;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+  color: #e91e63;
+}
+.prev {
+  left: 10px; /* Changed to move to the edge */
+}
+.next {
+  right: 10px; /* Changed to move to the edge */
+}
+.navigation-instructions {
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+  letter-spacing: 1px;
+}
