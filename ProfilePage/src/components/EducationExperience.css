@@ -1,38 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.specialisation {
+  padding: 60px 20px;
+  background-color: #f4f4f9;
+  color: #333;
+  text-align: center;
+}
 .eduexp {
-    display: flex;
-    background-color: #1a1a1a;
-    justify-content: space-evenly;
-    padding: 10px 50px; /* Adjust padding as needed */
-  }
-  
-  .eduexp section {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 40%;
-    transition: background-color 0.3s;
-    height: 600px;
-    margin-bottom: 20px; /* Adjust margin to control spacing between sections */
-  }
-  
-  .eduexp section:hover {
-    background-color: #e91e63;
-  }
-  
-  .eduexp h2 {
-    font-size: 2.5em;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .course h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px; /* Adjust margin to control spacing between heading and content */
-  }
-  
-  .course p {
-    font-size: 1em;
-    font-weight: 300;
-    margin-bottom: 10px; /* Adjust margin to control spacing between paragraphs */
-  }
-  
+  display: flex;
+  background-color: #f4f4f9;
+  justify-content: space-evenly;
+  padding: 40px 50px;
+  flex-wrap: wrap;
+}
+
+.eduexp section {
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 45%;
+  transition: #f4f4f9 0.3s, transform 0.3s;
+  height: auto;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.eduexp section:hover {
+  background-color: #d46288;
+  transform: translateY(-10px);
+}
+
+.eduexp h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+.course h3 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.course p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+}

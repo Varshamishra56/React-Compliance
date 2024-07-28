@@ -27,7 +27,7 @@ const Skills = () => (
       </div>
       <div className="skill">
         <i className="fas fa-toolbox"></i>
-        <h2>DevOps Tools</h2>
+        <h2 style={{fontWeight: "600px"}}>DevOps Tools</h2>
         <p>Docker, Kubernetes, Jenkins</p>
       </div>
       <div className="skill">

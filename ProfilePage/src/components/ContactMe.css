@@ -1,14 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
 .contact-me {
-  padding: 10px 50px;
-  background-color: #1a1a1a;
-  color: #fff;
+  padding: 40px 50px;
+  background-color: #f4f4f9;
+  color: #2e2e2e;
   text-align: center;
-  margin-bottom: 0; /* Ensure no bottom margin to reduce unnecessary space */
+  margin-bottom: 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Montserrat', sans-serif;
 }
 
 .contact-me h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #2e2e2e;
+  font-weight: 700;
 }
 
 .contact-me h1 span {
@@ -18,42 +25,90 @@
 .contact-me form {
   max-width: 600px;
   margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .contact-me .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .contact-me .form-group label {
   display: block;
   font-size: 1.2rem;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 .contact-me .form-group input,
 .contact-me .form-group textarea {
-  width: calc(100% - 22px); /* Adjusted width calculation to account for padding and border */
-  padding: 10px;
+  width: calc(100% - 20px); /* Adjusted width calculation to account for padding and border */
+  padding: 15px;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: border 0.3s ease;
+}
+
+.contact-me .form-group input:focus,
+.contact-me .form-group textarea:focus {
+  border: 1px solid #e91e63;
+  outline: none;
 }
 
 .contact-me .form-group textarea {
   resize: vertical;
+  min-height: 150px;
 }
 
 .contact-me button {
-  padding: 10px 20px;
+  padding: 15px 30px;
   font-size: 1.2rem;
   color: #fff;
   background-color: #e91e63;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px; /* Optional: Adjust margin-top for button positioning */
+  margin-top: 20px; /* Optional: Adjust margin-top for button positioning */
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .contact-me button:hover {
+  background-color: #d81b60;
+  transform: translateY(-3px);
+}
+
+.contact-me button:active {
+  background-color: #c2185b;
+  transform: translateY(0);
+}
+
+.contact-me .form-group input,
+.contact-me .form-group textarea {
+  box-sizing: border-box; /* Added to ensure padding is considered within width calculation */
+}
+
+.contact-me .form-group input::placeholder,
+.contact-me .form-group textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-me .form-group input:hover,
+.contact-me .form-group textarea:hover {
+  border-color: #e91e63;
+}
+
+.contact-me .form-group input[type="submit"] {
+  background-color: #e91e63;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-me .form-group input[type="submit"]:hover {
   background-color: #d81b60;
 }

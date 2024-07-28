@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min"; // Import Bootstrap JS for components like dropdowns
 
 const Header = () => {
   const [iscollapsed, setcollapsed] = useState(true);

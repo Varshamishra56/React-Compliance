@@ -1,35 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
 .specialisation {
-    height: 670px;
-    margin-top: 0;
-    text-align: center;
-    padding: 10px 50px;
-    background-color: #1a1a1a;
-  }
-  .specialisation h1 {
-    font-size: 40px;
-    margin-bottom: 50px;
-  }
-  .specialisation h1 span {
-    color: #e91e63;
-  }
-  .services {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-  }
-  .service {
-    max-width: 400px;
-  }
-  .service .icon {
-    font-size: 80px;
-    margin-bottom: 20px;
-    color: #e91e63;
-  }
-  .service h2 {
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
-  .service p {
-    font-size: 20px;
-  }
-  
+  padding: 60px 20px;background-color: #f4f4f9;
+  color: #333;
+  text-align: center;
+}
+
+.specialisation h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.specialisation h1 span {
+  color: #e91e63;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.service {
+  max-width: 300px;
+  background-color: #f4f4f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.466);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+  background-color: rgb(234, 175, 66);
+  color: #2a2a2a;
+}
+
+.service .icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: #e91e63;
+}
+
+.service h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.service p {
+  font-size: 1rem;
+  line-height: 1.6;
+}

@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
 .projects {
-  background-color: #1a1a1a;
+  background-color: #f4f4f9;
   padding: 20px 50px;
   align-items: center;
   height: 670px;
@@ -12,7 +14,8 @@
   font-size: 50px;
   text-align: center;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: #2e2e2e;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 .projects h1 span {
@@ -39,13 +42,13 @@
   box-sizing: border-box;
   padding: 20px;
   border-radius: 10px;
-  background: linear-gradient(145deg, #2e2e2e, #383838);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 .projects-made:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 .projects-made .icon {
   font-size: 100px;
@@ -60,38 +63,36 @@
 .projects-made h2 {
   font-size: 40px;
   text-align: center;
-  background-color: blanchedalmond;
-  color: black;
+  background-color: #ffe6e6; /* Very Light Pink */
+  color: #2e2e2e;
   border-radius: 30%;
-  box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
-    rgba(255, 255, 255, 0.12) 0px -12px 30px,
-    rgba(255, 255, 255, 0.12) 0px 4px 6px,
-    rgba(255, 255, 255, 0.17) 0px 12px 13px,
-    rgba(255, 255, 255, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 54px 55px, rgba(0, 0, 0, 0.08) 0px -12px 30px, rgba(0, 0, 0, 0.1) 0px 4px 6px, rgba(0, 0, 0, 0.1) 0px 12px 13px, rgba(0, 0, 0, 0.06) 0px -3px 5px;
   margin-bottom: 10px;
 }
 .projects-made p {
   font-size: 20px;
-  color: #ffffff;
+  color: #2e2e2e;
   text-align: center;
   line-height: 1.5;
 }
-.prev, .next {
+.prev,
+.next {
   font-size: 40px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  color: #ffffff;
+  color: #2e2e2e;
   border: none;
   padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
   cursor: pointer;
   z-index: 1;
   transition: background-color 0.3s, transform 0.3s, color 0.3s;
   border-radius: 50%;
 }
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.2);
   transform: scale(1.1);
   color: #e91e63;
 }
@@ -103,7 +104,7 @@
 }
 .navigation-instructions {
   font-size: 18px;
-  color: #ffffff;
+  color: #2e2e2e;
   text-align: center;
   margin-top: 20px;
   font-style: italic;
